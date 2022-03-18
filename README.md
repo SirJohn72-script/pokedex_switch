@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Pokedex dentro de un Nintendo Switch 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
