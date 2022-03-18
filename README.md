@@ -1,5 +1,5 @@
 # Pokedex dentro de un Nintendo Switch 
-![Image Description](https://raw.github.com/SirJohn72-script/pokedex_switch/blob/master/public/cover.PNG)
+![Image Description](./public/cover.PNG)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
