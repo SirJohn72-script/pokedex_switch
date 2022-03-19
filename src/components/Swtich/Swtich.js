@@ -130,11 +130,15 @@ const SwitchModel = ({
           // material={nodes.btn_flex_dwn.material}
           onPointerOver={() => setHoverDwn(true)}
           onPointerLeave={() => setHoverDwn(false)}
-          onPointerDown={() => setHoverDwn(true)}
-          onPointerMissed={() => setHoverDwn(false)}
-          onClick={() => {
+          onPointerDown={() => {
+            setHoverDwn(true)
             setPokeSelector(pokeSelector + 3)
+            setShowPokemonCard(false)
           }}
+          onPointerMissed={() => setHoverDwn(false)}
+          // onClick={() => {
+          //   setPokeSelector(pokeSelector + 3)
+          // }}
         >
           <meshStandardMaterial
             roughness={0.95}
@@ -149,13 +153,19 @@ const SwitchModel = ({
           // material={nodes.btn_fle_izq.material}
           onPointerOver={() => setHoverIzq(true)}
           onPointerLeave={() => setHoverIzq(false)}
-          onPointerDown={() => setHoverIzq(true)}
-          onPointerMissed={() => setHoverIzq(false)}
-          onClick={() => {
+          onPointerDown={() => {
+            setShowPokemonCard(false)
+            setHoverIzq(true)
             if (pokeSelector > 1) {
               setPokeSelector(pokeSelector - 1)
             }
           }}
+          onPointerMissed={() => setHoverIzq(false)}
+          // onClick={() => {
+          //   if (pokeSelector > 1) {
+          //     setPokeSelector(pokeSelector - 1)
+          //   }
+          // }}
         >
           <meshStandardMaterial
             roughness={0.95}
@@ -170,13 +180,19 @@ const SwitchModel = ({
           // material={nodes.btn_fle_sup.material}
           onPointerOver={() => setHoverSup(true)}
           onPointerLeave={() => setHoverSup(false)}
-          onPointerDown={() => setHoverSup(true)}
-          onPointerMissed={() => setHoverSup(false)}
-          onClick={() => {
+          onPointerDown={() => {
+            setShowPokemonCard(false)
+            setHoverSup(true)
             if (pokeSelector > 3) {
               setPokeSelector(pokeSelector - 3)
             }
           }}
+          onPointerMissed={() => setHoverSup(false)}
+          // onClick={() => {
+          //   if (pokeSelector > 3) {
+          //     setPokeSelector(pokeSelector - 3)
+          //   }
+          // }}
         >
           <meshStandardMaterial
             roughness={0.95}
@@ -191,13 +207,19 @@ const SwitchModel = ({
           // material={nodes.btn_fle_der.material}
           onPointerOver={() => setHoverDer(true)}
           onPointerLeave={() => setHoverDer(false)}
-          onPointerDown={() => setHoverDer(true)}
-          onPointerMissed={() => setHoverDer(false)}
-          onClick={() => {
+          onPointerDown={() => {
+            setShowPokemonCard(false)
+            setHoverDer(true)
             if (pokeSelector < 21) {
               setPokeSelector(pokeSelector + 1)
             }
           }}
+          onPointerMissed={() => setHoverDer(false)}
+          // onClick={() => {
+          //   if (pokeSelector < 21) {
+          //     setPokeSelector(pokeSelector + 1)
+          //   }
+          // }}
         >
           <meshStandardMaterial
             roughness={0.95}
@@ -219,9 +241,9 @@ const SwitchModel = ({
           // material={nodes.btn_menos.material}
           onPointerOver={() => setHoverMenos(true)}
           onPointerLeave={() => setHoverMenos(false)}
-          onPointerDown={() => setHoverMenos(true)}
-          onPointerMissed={() => setHoverMenos(false)}
-          onClick={() => {
+          onPointerDown={() => {
+            setShowPokemonCard(false)
+            setHoverMenos(true)
             setPokeSelector(1)
 
             if (offset >= 21) {
@@ -229,6 +251,15 @@ const SwitchModel = ({
               setOffset(offset - 21)
             }
           }}
+          onPointerMissed={() => setHoverMenos(false)}
+          // onClick={() => {
+          //   setPokeSelector(1)
+
+          //   if (offset >= 21) {
+          //     getListOfPokemons(offset - 21)
+          //     setOffset(offset - 21)
+          //   }
+          // }}
         >
           <meshStandardMaterial
             roughness={0.95}
@@ -250,14 +281,20 @@ const SwitchModel = ({
           // material={nodes.btn_b.material}
           onPointerOver={() => setHoverB(true)}
           onPointerLeave={() => setHoverB(false)}
-          onPointerDown={() => setHoverB(true)}
-          onPointerMissed={() => setHoverB(false)}
-          onClick={() => {
+          onPointerDown={() => {
+            setHoverB(true)
             setShowPokemonCard(true)
             setCurrentPokemon(
               listPokemons[pokeSelector - 1]
             )
           }}
+          onPointerMissed={() => setHoverB(false)}
+          // onClick={() => {
+          //   setShowPokemonCard(true)
+          //   setCurrentPokemon(
+          //     listPokemons[pokeSelector - 1]
+          //   )
+          // }}
         >
           <meshStandardMaterial
             roughness={0.95}
@@ -286,14 +323,20 @@ const SwitchModel = ({
           // material={nodes.btn_a.material}
           onPointerOver={() => setHoverA(true)}
           onPointerLeave={() => setHoverA(false)}
-          onPointerDown={() => setHoverA(true)}
-          onPointerMissed={() => setHoverA(false)}
-          onClick={() => {
+          onPointerDown={() => {
+            setHoverA(true)
             setShowPokemonCard(false)
             setCurrentPokemon(
               listPokemons[pokeSelector - 1]
             )
           }}
+          onPointerMissed={() => setHoverA(false)}
+          // onClick={() => {
+          //   setShowPokemonCard(false)
+          //   setCurrentPokemon(
+          //     listPokemons[pokeSelector - 1]
+          //   )
+          // }}
         >
           <meshStandardMaterial
             roughness={0.95}
@@ -315,15 +358,23 @@ const SwitchModel = ({
           // material={nodes.btn_mas.material}
           onPointerOver={() => setHoverMas(true)}
           onPointerLeave={() => setHoverMas(false)}
-          onPointerDown={() => setHoverMas(true)}
-          onPointerMissed={() => setHoverMas(false)}
-          onClick={() => {
+          onPointerDown={() => {
+            setShowPokemonCard(false)
+            setHoverMas(true)
             setPokeSelector(1)
             if (offset < 260) {
               getListOfPokemons(offset + 21)
               setOffset(offset + 21)
             }
           }}
+          onPointerMissed={() => setHoverMas(false)}
+          // onClick={() => {
+          //   setPokeSelector(1)
+          //   if (offset < 260) {
+          //     getListOfPokemons(offset + 21)
+          //     setOffset(offset + 21)
+          //   }
+          // }}
         >
           <meshStandardMaterial
             roughness={0.95}
