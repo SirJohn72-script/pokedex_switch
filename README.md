@@ -18,6 +18,7 @@ PD: Se utilizaron bastantes hooks de useState para controlar el llamado a la Pok
 ![Controles Cover](public/controls.png)
 
 Solo los botones indicados funcionan 
+
 PD: Posible incompatibilidad con dispositivos de Apple
 
 ## Demo 
