@@ -16,4 +16,4 @@ PD: Se utilizaron bastantes hooks de useState para controlar el llamado a la Pok
 
 
 ## Demo 
-Firebase Hosting: https://pokedexswitch.web.app/)
+Firebase Hosting: https://pokedexswitch.web.app/
