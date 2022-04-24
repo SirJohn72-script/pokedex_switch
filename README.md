@@ -14,5 +14,12 @@ PD: Se utilizaron bastantes hooks de useState para controlar el llamado a la Pok
  - Axios
  - [Blender](https://www.blender.org/)
 
+## Controles
+![Controles Cover](public/controls.png)
 
+Solo los botones indicados funcionan 
 
+PD: Posible incompatibilidad con dispositivos de Apple
+
+## Demo 
+Firebase Hosting: https://pokedexswitch.web.app/
