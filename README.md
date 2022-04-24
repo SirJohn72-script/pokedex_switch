@@ -22,4 +22,4 @@ Solo los botones indicados funcionan
 PD: Posible incompatibilidad con dispositivos de Apple
 
 ## Demo 
-Firebase Hosting: https://pokedexswitch.web.app/
+Firebase Hosting: https://pokedex-app-836cc.web.app/
