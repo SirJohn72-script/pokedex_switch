@@ -38,4 +38,17 @@ export const CloseControls = styled.div`
   font-family: sans-serif;
   transition: 0.3s all ease;
   cursor: pointer;
+
+  p {
+    background-color: #393939;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s all ease;
+
+    &:hover {
+      transform: scale(1.03);
+      transition: 0.3s all ease;
+    }
+  }
 `
