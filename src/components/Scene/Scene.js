@@ -13,6 +13,8 @@ import * as THREE from "three"
 import SwitchModel from "../Swtich/Swtich"
 import { getPokemon } from "../Helpers/GetPokemon"
 import { getListPokemons } from "../Helpers/getPokemons"
+import { useDispatch } from "react-redux"
+import { useContextBridge } from "@react-three/drei"
 
 const Scene = () => {
   const [listPokemons, setListPokemons] = useState([])

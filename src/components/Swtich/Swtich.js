@@ -6,6 +6,8 @@ import React, {
 } from "react"
 import { Html, useGLTF } from "@react-three/drei"
 import Hero from "../Hero/Hero"
+import { getImpresionColor } from "../Redux/pokeReducer"
+import { useDispatch } from "react-redux"
 
 const SwitchModel = ({
   rotationSwitch,

@@ -24,6 +24,7 @@ const GET_NEXT_LIST_POKEMONS = "GET_NEXT_LIST_POKEMONS"
 const GET_PREV_LIST_POKEMONS = "GET_PREV_LIST_POKEMONS"
 const SHOW_POKEMON_CARDS = "SHOW_POKEMON_CARDS"
 const MOVE_SELECTOR = "SHOW_POKEMON_CARDS"
+const SALUDAR = "SALUDAR"
 
 //Reducer
 export const pokemonReducer = (
@@ -36,6 +37,10 @@ export const pokemonReducer = (
 
     case SHOW_POKEMON_CARDS:
       return { ...state, showPokemonCard: action.payload }
+
+    case SALUDAR:
+      console.log("Saludo del mundo")
+      return state
 
     default:
       return state
@@ -92,4 +97,12 @@ export const showPokemonCard =
         payload: !showPokemonCard,
       })
     } catch (error) {}
+  }
+
+export const getImpresionColor =
+  () => (dispatch, getState) => {
+    dispatch({
+      action: SALUDAR,
+      payload: {},
+    })
   }
